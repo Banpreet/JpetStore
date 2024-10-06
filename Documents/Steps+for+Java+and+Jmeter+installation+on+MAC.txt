@@ -1,0 +1,96 @@
+
+Prerequisite for Jmeter: Java 8+ should be installed on your system.
+
+
+====================================
+Steps to install java on MAC machine:
+====================================
+
+1a) To check if Java is already installed on your Mac, run the below command in Mac terminal:
+
+	java -version
+
+1b) Download Java using below link 
+
+Note: 
+1. If it asks for login ID and password for download, create your account/signup , then login.
+
+
+Go to below link:
+https://www.oracle.com/my/java/technologies/downloads/
+
+
+Select your OS: MacOS
+
+For MAC with MAC chip, download :-   x64 DMG Installer	
+For MAC with Inter chip, download :- ARM64 DMG Installer	
+
+
+2. Double-click the installer file you downloaded, Double-click the package icon to start the installer   Follow the instructions on the installation window to complete the installation.
+
+
+3. Setup Java environment variables on MAC:
+
+   3a) To check your mac is using zsh profile or bash profile, use the below command.
+		echo $SHELL    (or echo $0)
+
+	Note: Bash was the default shell in macOS version 10.3 until version 10.15 , For later versions default shell is zsh
+	
+	3b) If your system is using zsh profile, open the file in edit mode using below command in Mac terminal:
+
+		open -e .zshrc 
+		
+		*******
+		if your system us using bash shell, use below command:
+            open -e .bash_profile
+		********
+		
+		NOTE: If the file is not present, create the file using below command in Mac terminal:
+			
+			touch .zshrc      
+
+			
+
+	3c) Add the below 2 lines of entry into the file and save the file, path given in first line is java installation location in the system
+
+	export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home    
+	export PATH= $JAVA_HOME/bin:$PATH
+
+	3d) Run the command in Mac terminal to effect the above changes.
+		source .zshrc
+
+
+	3e) To verify java environment variable is correctly setup, use the below command in Mac terminal.
+		echo $JAVA_HOME
+
+
+***********=================================**************************
+
+Steps to Download and Install Jmeter on MAC:
+=============================================
+
+1) Download the Jmeter using below link (Download zip version):
+	
+   https://jmeter.apache.org/download_jmeter.cgi 
+
+
+
+2) Extract the zip folder and save the extracted folder in any location in the system
+
+
+3) To open the Jmeter on MAC :
+
+	Go to the Jmeter bin folder location using command in Mac terminal:  cd "path_to_jmeter_bin_folder"
+		
+	example:    cd	  "/Users/user1/Softwares/apache-jmeter-5.6.3/bin"
+	
+	Then use below command to open Jmeter:  
+		
+		sh meter.sh
+
+
+
+
+
+
+

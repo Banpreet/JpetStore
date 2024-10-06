@@ -1,0 +1,4 @@
+C:\Users\Acerit\Desktop\Jmeter PracticeSets\MyfirstScript.jmx
+C:\Users\Acerit\Desktop\Jmeter PracticeSets\report
+
+ jmeter  -n -t "C:\Users\Acerit\Desktop\Jmeter PracticeSets\MyfirstScript.jmx" -l "C:\Users\Acerit\Desktop\Jmeter PracticeSets\results" -e -o "C:\Users\Acerit\Desktop\Jmeter PracticeSets\report"
